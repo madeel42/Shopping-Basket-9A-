@@ -1,0 +1,42 @@
+.MainWrapper {
+  width: 91.5%;
+  margin: 8px auto;
+  display: flex;
+  position: sticky;
+  top: 0;
+  padding: 12px;
+  z-index: 1;
+  background: white;
+  box-shadow: 0px 0px 3px 1px rgb(201, 189, 141);
+  justify-content: space-between;
+}
+.MainWrapper ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.MainWrapper ul li {
+  padding-left: 7px;
+  padding-right: 7px;
+  cursor: pointer;
+}
+.MainWrapper ul a {
+  text-decoration: none;
+}
+.MainWrapper ul li:hover {
+  color: rgb(201, 189, 141);
+}
+.ITEMSCOUNT {
+  position: relative;
+  right: 3px;
+  font-size: 11px;
+  font-weight: bold;
+  top: -9px;
+  color: red;
+}
+.logostyle {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}

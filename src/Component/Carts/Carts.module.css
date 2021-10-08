@@ -1,0 +1,96 @@
+.CARTWRAPPER {
+  width: 91.5%;
+  min-height: 150px;
+  margin: 20px auto;
+  padding: 9px;
+  display: flex;
+  box-shadow: 2px 2px 3px #5b4e4ed1;
+  justify-content: space-between;
+  border-radius: 6px;
+  align-items: center;
+  background-color: rgb(201, 189, 141);
+}
+.PARENT {
+  width: 270px;
+  box-shadow: 0px 0px 3px #808080b3;
+}
+.IMGDIV {
+  display: flex;
+  height: 170px;
+  margin-right: 4px;
+}
+.CARTIMG {
+  width: 100%;
+  object-fit: contain;
+  padding: 3px;
+  background: #ffffffd6;
+}
+.OPERATORS {
+  display: flex;
+  align-items: center;
+}
+.OPERATORS button {
+  border: none;
+  margin: 6px;
+  cursor: pointer;
+}
+.PRICE {
+  margin: auto 26px;
+}
+.TOTALPRICE {
+  text-align: center;
+  margin-bottom: 13px;
+  font-size: 21px;
+  font-weight: 700;
+}
+.DESCRIPION {
+  text-align: justify;
+  margin-left: 14px;
+  margin-right: 14px;
+}
+.BUTTON {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 11px;
+}
+.BUTTON button {
+  border: none;
+  padding: 6px;
+  background: rgb(201, 189, 141);
+  border-radius: 4px;
+  cursor: pointer;
+}
+@media screen and (max-width: 700px) {
+  .CARTWRAPPER {
+    width: 91.5%;
+    min-height: 150px;
+    margin: 20px auto;
+    padding: 9px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(201, 189, 141);
+  }
+  .PARENT {
+    width: 270px;
+    margin-bottom: 10px;
+  }
+  .DESCRIPION {
+    text-align: justify;
+    margin-bottom: 10px;
+  }
+  .PRICE {
+    margin-bottom: 10px;
+  }
+  .BUTTON button {
+    border: none;
+    padding: 6px;
+    background: rgb(201, 189, 141);
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px auto;
+  }
+}

@@ -1,0 +1,51 @@
+.MainWrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: auto;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.Child {
+  width: 342px;
+  margin: 7px;
+  min-height: 270px;
+  cursor: pointer;
+  box-shadow: 0px 0px 3px 1px rgb(201, 189, 141);
+}
+.ChildImg {
+  max-width: 100%;
+  object-fit: contain;
+}
+.IMGDIV {
+  height: 269px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+  padding: 7px;
+}
+.CardFooter {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+.CardFooter button {
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .MainWrapper {
+    display: flex;
+    width: 94%;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 500px) {
+  .Child {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
