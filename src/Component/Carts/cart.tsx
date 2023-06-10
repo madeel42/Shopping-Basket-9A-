@@ -9,6 +9,7 @@ import { useHistory } from "react-router";
 import { Products } from '../Cards/products';
 export const Cart: React.FC = () => {
     const cartData = useAppSelector(getcartProduct)
+    console.log(cartData,"cartDatacartData")
     const totalPrice = useAppSelector(getTotalPrice)
     const dispatch = useAppDispatch()
     const history = useHistory();

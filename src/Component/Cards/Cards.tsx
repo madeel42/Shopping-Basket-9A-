@@ -5,18 +5,21 @@ import { useAppSelector, useAppDispatch } from '../../Store/Store.hooks'
 import { Products } from './products'
 import { getproductsSelector } from './card.slice'
 import { addProducts } from '../Carts/cart.slice'
+import { useGetData } from './useGetData'
+
 export const Cards = () => {
-    const useSelector = useAppSelector(getproductsSelector)
-    const Dispatch = useAppDispatch()
-    console.log(useSelector);
-    const handleAddToCart = (e: Products) => {
-        // Add to cart
-        Dispatch(addProducts(e))
-    }
-    let CARDS = useSelector.map(product => {
+
+    const { useSelector, handleAddToCart } = useGetData()
+    // const Dispatch = useAppDispatch()
+    // console.log(useSelector);
+    // const handleAddToCart = (e: Products) => {
+    //     // Add to cart
+    //     Dispatch(addProducts(e))
+    // }
+    let CARDS = useSelector.map((product:Products) => {
         return <div className={classes.Child} key={product.id}><Link to={`/items/${product.id}`}><div className={classes.IMGDIV}><img src={product.img} alt="" /></div></Link>
             <div className={classes.CardFooter}><p>{product.title}</p>
-                <button onClick={() => handleAddToCart(product)}>Add to Cart</button>
+                <button data-testid={`pr-${product.id}`} onClick={() => handleAddToCart(product)}>Add to Cart</button>
             </div>
         </div>
     })
